@@ -145,7 +145,7 @@ end;
 
 function TGame.IsOneWayPath(Y, X: Integer): Boolean;
 var
-  cnt: INteger;
+  cnt: Integer;
 begin
   Result := False;
 
@@ -296,6 +296,7 @@ begin
   FSizeX := X;
   FSizeY := Y;
   AllocArrays;
+  Clear;
 end;
 
 function TGame.Solve(PrintMove: Boolean): Boolean;
